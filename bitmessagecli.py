@@ -695,7 +695,7 @@ class Bitmessage(object):
                     else:
                         # processes all of the addresses and lists them out
                         for each in range (0, number_of_addresses):
-                            label = json_addresses['addresses'][each]['label']
+                            label        = json_addresses['addresses'][each]['label']
                             json_address = json_addresses['addresses'][each]['address']
                             if '{0}'.format(address) == label:
                                 address = json_address
@@ -834,11 +834,9 @@ class Bitmessage(object):
                         break
                     else:
                         for each in range (0, number_of_addresses):
-                            label = json_addresses['addresses'][each]['label']
+                            label   = json_addresses['addresses'][each]['label']
                             address = json_addresses['addresses'][each]['address']
-                            if label.startswith('[chan] '):
-                                label = label.split('[chan] ')[1]
-                            # address entered was a label and is found
+                            if label.startswith('[chan] '):                          label = label.split('[chan] ')[1]  # address entered was a label and is found
                             elif to_address == label:
                                 found = True
                                 to_address = address
@@ -858,11 +856,9 @@ class Bitmessage(object):
                         if not self.valid_address(from_address):
                             # processes all of the addresses
                             for each in range (0, number_of_addresses):
-                                label = jsonAddresses['addresses'][each]['label']
+                                label   = jsonAddresses['addresses'][each]['label']
                                 address = jsonAddresses['addresses'][each]['address']
-                                if label.startswith('[chan] '):
-                                    label = label.split('[chan] ')[1]
-                                # address entered was a label and is found
+                                if label.startswith('[chan] '):                         label = label.split('[chan] ')[1] # address entered was a label and is found
                                 if fromAddress == label:
                                     found = True
                                     fromAddress = address
