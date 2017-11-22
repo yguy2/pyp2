@@ -6,5 +6,5 @@ https://docs.landscape.io/configuration.html
 
 https://lgtm.com/projects/g/yguy2/pyp2
 
-
+https://landscape.io/github/yguy2/pyp2
 
