@@ -1,0 +1,4 @@
+# some config
+queries:
+- exclude: py/uninitialized-local-variable
+# other config 
